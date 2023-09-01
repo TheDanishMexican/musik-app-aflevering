@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music artist app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to the Music Artist App</h1>
+    </header>
+
+    <div id="sort-filter-search-container">
+        <div id="sort">
+            <label for="">Sort by:</label>
+            <select name="sort" id="sort">
+                <option value="" selected></option>
+                <option value="name">Name</option>
+                <option value="genre">Genre</option>
+            </select>
+        </div>
+        <div id="filter">
+            <label for="">Filter by:</label>
+            <select name="filter" id="filter">
+                <option value="" selected></option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+            </select>
+        </div>
+        <div id="search-bar">
+            <input type="search" name="search" id="search" placeholder="Search">
+        </div>
+    </div>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a platform dedicated to showcasing talented artists from around the world.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Discover new artists</li>
+            <li>Follow your favorite artists</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Music Artist App</p>
+    </footer> 
+
+    <script src="display.js"></script>
+
+</body>
+</html>
