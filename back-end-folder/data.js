@@ -1,6 +1,6 @@
-export const artists = 
-[
+export const artists = [
   {
+    "id": 0,
     "name": "Taylor Swift",
     "birthdate": "December 13, 1989",
     "activeSince": 2006,
@@ -11,6 +11,7 @@ export const artists =
     "shortDescription": "Taylor Swift is an American singer-songwriter known for her catchy pop and country songs."
   },
   {
+    "id": 1,
     "name": "Beyoncé",
     "birthdate": "September 4, 1981",
     "activeSince": 1997,
@@ -21,6 +22,7 @@ export const artists =
     "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances."
   },
   {
+    "id": 2,
     "name": "Ed Sheeran",
     "birthdate": "February 17, 1991",
     "activeSince": 2004,
@@ -31,6 +33,7 @@ export const artists =
     "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs."
   },
   {
+    "id": 3,
     "name": "Ariana Grande",
     "birthdate": "June 26, 1993",
     "activeSince": 2008,
@@ -40,4 +43,5 @@ export const artists =
     "image": "ariana_grande.jpg",
     "shortDescription": "Ariana Grande is an American singer with a wide vocal range and numerous chart-topping hits."
   }
-]
+];
+
