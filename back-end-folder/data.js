@@ -1,3 +1,4 @@
+export const artists = 
 [
   {
     "name": "Taylor Swift",
