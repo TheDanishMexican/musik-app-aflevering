@@ -2,17 +2,25 @@
 
 window.addEventListener("load", start);
 
+import { showCreateForm } from "./modules/dialogue.js";
+import { showAllArtists } from "./modules/display.js";
+
 const endpoint = 'http://localhost:3000'
 
-async function start() {
-    console.log("We started the app");
-
+export async function start() {
     const artistData = await getData();
-    console.log(artistData);
+
+    document.querySelector("#add-new button")
+    .addEventListener("click", showCreateForm)
+
+    showAllArtists(artistData);
 }
 
-async function getData() {
+export async function getData() {
     const response = await fetch(`${endpoint}/artists/data`);
     const data = await response.json();
     return data;
 }
+
+
+

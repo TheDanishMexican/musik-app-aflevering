@@ -34,10 +34,6 @@
                 <option value="country">Country</option>
             </select>
         </div>
-        <div id="search-bar">
-            <input type="search" name="search" id="search" placeholder="search for artist">
-            <button>Search</button>
-        </div>
     </div>
 
     <div id="artists">
@@ -45,7 +41,6 @@
         <table>
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Name</th>
                     <th>Birthdate</th>
                     <th>Active Since</th>
@@ -57,7 +52,6 @@
                 </tr>
             </thead>
             <tbody id="artistTableBody">
-                <!-- Artist data will be inserted here using JavaScript -->
             </tbody>
         </table>
     </div>
@@ -80,7 +74,39 @@
         <p>&copy; 2023 Music Artist App</p>
     </footer> 
 
-    <script src="index.js"></script>
+    <dialog id="create-new-dialog">
+        <form id="artistForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label>Genres:</label><br>
+            <input type="radio" id="pop" name="genres" value="Pop">
+            <label for="pop">Pop</label><br>
+            <input type="radio" id="country" name="genres" value="Country">
+            <label for="country">Country</label><br>
+            <!-- Add more genres here as needed -->
+
+            <label for="labels">Labels (comma-separated):</label>
+            <input type="text" id="labels" name="labels"><br><br>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website"><br><br>
+
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" name="image"><br><br>
+
+            <label for="shortDescription">Short Description:</label><br>
+            <textarea id="shortDescription" name="shortDescription" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Add Artist">
+        </form>
+    </dialog>
+
+    <script type="module" src="index.js"></script>
+    <script type="module" src="./modules/display.js"></script>
 
 </body>
 </html>
