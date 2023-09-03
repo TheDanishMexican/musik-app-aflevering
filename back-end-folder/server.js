@@ -3,12 +3,11 @@ import fs from "fs";
 import cors from "cors";
 import { artists } from "./data.js";
 
-const port = 3000;
 const app = express();
 
 app.use(express.json());
 
-app.use(cors);
+app.use(cors());
 
 app.get('/artists/data', (req, res) => {
     res.json(artists);
