@@ -2,6 +2,7 @@
 
 window.addEventListener("load", start);
 
+import { cancelClicked } from "./modules/submit.js";
 import { showCreateForm } from "./modules/dialogue.js";
 import { showAllArtists } from "./modules/display.js";
 
@@ -13,6 +14,9 @@ export async function start() {
     document.querySelector("#add-new button")
     .addEventListener("click", showCreateForm)
 
+    document.querySelector("#cancelButton")
+    .addEventListener("click", cancelClicked)
+
     showAllArtists(artistData);
 }
 
@@ -20,6 +24,10 @@ export async function getData() {
     const response = await fetch(`${endpoint}/artists/data`);
     const data = await response.json();
     return data;
+}
+
+export async function createNew(newArtist) {
+    console.log(newArtist);
 }
 
 

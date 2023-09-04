@@ -76,11 +76,15 @@
 
     <dialog id="create-new-dialog">
         <form id="artistForm">
+            <h2>Add artist</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
             <label for="birthdate">Birthdate:</label>
             <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+            <label for="activeSince">Active since:</label>
+            <input type="date" id="activeSince" name="activeSince"><br><br> <!-- New input field -->
 
             <label>Genres:</label><br>
             <input type="radio" id="pop" name="genres" value="Pop">
@@ -102,6 +106,7 @@
             <textarea id="shortDescription" name="shortDescription" rows="4" cols="50"></textarea><br><br>
 
             <input type="submit" value="Add Artist">
+            <input type="button" value="Cancel" id="cancelButton">
         </form>
     </dialog>
 

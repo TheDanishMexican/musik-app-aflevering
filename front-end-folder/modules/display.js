@@ -16,7 +16,7 @@ export function showOneArtist(artist) {
       <td>${artist.activeSince}</td>
       <td>${artist.genres.join(', ')}</td>
       <td>${artist.labels.join(', ')}</td>
-      <td><a href="${artist.website}" target="_blank">Website</a></td>
+      <td><a href="${artist.website}" target="_blank">${artist.website}</a></td>
       <td><img src="${artist.image}" alt="${artist.name}" width="100"></td>
       <td>${artist.shortDescription}</td>
       <td><button class="update-button">Update</button></td>
