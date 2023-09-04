@@ -14,14 +14,22 @@ export function createNewClicked(event) {
     // document.querySelector("#artistForm").removeEventListener("submit", createNewClicked);
 
     const formInput = event.target;
+    const selectedGenres = [];
+    const checkboxes =formInput.querySelectorAll(".genre-checkbox");
+    const labels = formInput.labels.value.split(',').map(label => label.trim());
 
-    const name = formInput.name.value;
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            selectedGenres.push(checkbox.value);
+        }
+    });
+
     const newArtist = {
         name: formInput.name.value,
         birthdate: formInput.birthdate.value,
         activeSince: formInput.activeSince.value,
-        genres: formInput.genres.value,
-        labels: formInput.labels.value,
+        genres: selectedGenres,
+        labels: labels,
         website: formInput.website.value,
         image: formInput.image.value,
         shortDescription: formInput.shortDescription.value,
