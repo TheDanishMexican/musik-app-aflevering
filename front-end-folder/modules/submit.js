@@ -1,11 +1,16 @@
 "use strict";
 
 import { createNew, deleteArtist } from "../index.js";
+import { showUpdateForm } from "./dialogue.js";
 
 export function cancelClicked() {
     // document.querySelector("#cancelButton").removeEventListener("click", cancelClicked);
     document.querySelector("#create-new-dialog").close();
     document.querySelector("#artistForm").reset();
+}
+
+export function cancelClickedInUpdate() {
+    document.querySelector("#update-dialog").close();
 }
 
 export function createNewClicked(event) {
@@ -39,7 +44,13 @@ export function createNewClicked(event) {
     cancelClicked();
 }
 
-export function deleteClicked(id) {
-    console.log(id);
-    deleteArtist(id);
+export function updateClicked(artist) {
+    showUpdateForm();
+    const form = document.querySelector("#updateForm");
+    form.name.value = artist.name;
+    form.birthdate.value = artist.birthdate;
+}
+
+export function updateArtistClicked(event) {
+    event.preventDefault();
 }

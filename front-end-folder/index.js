@@ -52,5 +52,9 @@ export async function deleteArtist(id) {
     }
 };
 
+export async function updateArtist(artist){
+    
+}
+
 
 

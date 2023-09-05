@@ -1,6 +1,7 @@
 "use strict";
 
-import { deleteClicked } from "./submit.js";
+import { deleteArtist } from "../index.js";
+import { updateClicked } from "./submit.js";
 
 export function showAllArtists(allArtists) {
     document.querySelector("#artistTableBody").innerHTML = "";
@@ -28,6 +29,10 @@ export function showOneArtist(artist) {
 
     document.querySelector("#artistTableBody").insertAdjacentHTML("beforeend", html);
 
+    document.querySelector("#artistTableBody .artist-row:last-child .update-button")
+    .addEventListener("click", () => updateClicked(artist));
+
     document.querySelector('#artistTableBody .artist-row:last-child .delete-button')
-    .addEventListener("click", () => deleteClicked(`${artist.id}`));
+    .addEventListener("click", () => deleteArtist(`${artist.id}`));
 }
+

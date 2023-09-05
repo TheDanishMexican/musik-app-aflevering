@@ -18,24 +18,57 @@ app.post('/artists/data', async (req, res) => {
 // get new artist request
     const newArtist = req.body;
     newArtist.id = new Date().getTime();
+
 // get artist
     const data = await fs.readFile('data/data.json');
     const artists = JSON.parse(data);
     artists.push(newArtist);
+
 // opdater original fil
-    fs.writeFile('data/data.json', JSON.stringify(artists, null, 2));
+    await fs.writeFile('data/data.json', JSON.stringify(artists, null, 2));
     res.json(artists);
 });
+
+app.patch('/artists/data/:id', async (req,res) => {
+// get ID to update and what to update with
+    const artistId = Number(req.params.id);
+    const updatedArtistData = req.body;
+
+// read existing data
+    const data = await fs.readFile('data/data.json');
+    const artists = JSON.parse(data);
+
+// find artist index to match ID
+    const artistIndex =  artists.filter(a => a.id !==artistId);
+
+// Get the existing artist object
+    const existingArtist = artists[artistIndex];
+
+// Update the existing artist properties with the new data
+    for (const key in updatedArtistData) {
+      if (updatedArtistData.hasOwnProperty(key)) {
+        existingArtist[key] = updatedArtistData[key];
+      }
+    }
+
+// update the data file with the new data
+    await fs.writeFile('data/data.json', JSON.stringify(artists, null, 2));
+    
+// response
+    res.json(artists);
+})
 
 app.delete('/artists/data/:id', async (req, res) => {
 // get artistID to delete
     const artistId = Number(req.params.id);
-    console.log(artistId);
+
 // read the data file
     const data = await fs.readFile('data/data.json');
     const artists = JSON.parse(data);
+
 // find artist index to match ID
     const results =  artists.filter(a => a.id !==artistId);
+
 // update the json file
     await fs.writeFile('data/data.json', JSON.stringify(results, null, 2))
 

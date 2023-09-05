@@ -1,8 +1,25 @@
 [
   {
+    "id": 0,
+    "name": "Taylor Swift",
+    "birthdate": "13-12-1989",
+    "activeSince": 2006,
+    "genres": [
+      "Pop",
+      "Country"
+    ],
+    "labels": [
+      "Big Machine",
+      "Republic Records"
+    ],
+    "website": "https://www.taylorswift.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Taylor_Swift_Red_Tour_2%2C_2013.jpg",
+    "shortDescription": "Taylor Swift is an American singer-songwriter known for her catchy pop and country songs."
+  },
+  {
     "id": 1,
     "name": "Beyoncé",
-    "birthdate": "September 4, 1981",
+    "birthdate": "04-09-1981",
     "activeSince": 1997,
     "genres": [
       "Pop",
@@ -17,41 +34,43 @@
     "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances."
   },
   {
-    "name": "Daniel",
-    "birthdate": "2023-08-29",
-    "activeSince": "2023-09-05",
+    "id": 2,
+    "name": "Ed Sheeran",
+    "birthdate": "17-02-1991",
+    "activeSince": 2004,
     "genres": [
       "Pop",
-      "Country"
+      "Folk",
+      "Singer-Songwriter"
     ],
     "labels": [
-      "The best label"
+      "Asylum",
+      "Atlantic"
     ],
-    "website": "http://www.daniel.dk",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAhFBMVEX///8AAAD29vb09PT8/Pz4+Ph1dXXv7+/Pz8+kpKQYGBhVVVVmZmbp6elycnKwsLDGxsYTExMfHx/V1dWNjY1dXV22traVlZUuLi7l5eUmJibLy8u/v7+oqKiFhYV/f387OzsNDQ1GRkYsLCw1NTWdnZ1qampPT086OjpJSUlZWVnc3NyTE3ZPAAAJkklEQVR4nO2cC3uqOBCGEwgiKFZuCogi1svZ8v//385MCGoPbXefPd7Yec9plYg8+TKTySSECsEwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDPOPUY+uAHN3ZqdJOp2Nqk2SJJtqNDtOU2R6nFXJYTEOHl2/W7LwDiNffsMpmTuPruQtGX0nHpiNH13D22F3Kjdv5Wq8mi8O1e5K/XYuhhoTt63Et4syNU6iC/UfwUC1T1qB80/l4/RCffmQqt2c9AvtQsR/ncUvH1Cz23Ns1a0+lStwc+8sPnlI5W7M7AvtRBx24tcD7PPfahfuOebFwxNvtH8xjrud5YvBSf9Ju4gH3OV/0i4OnXj3nvW6Bz9qF3ujfUPBf0D8pF2JeWf4oc1sRj/a/Wz4oaV3vdqtbH1x9Ga0Hwc2zPVoVyKR0j7rPM/1HlHBG9KnXdVSHi7OMfMdmd+9ejelz+cXcBxdHHfD3MA6fJ/2ExZcTOxWRrt39+rdlB7tORV8nAvcgaZ2Pdo3uuS8UOsY7dUDKnhDerS3JRfrFUVbNLp//W7J79oXbUl0Hsz3/xe7n4yHn6OdWdAcen/Pu0wm7U4ydh9onI9NwabTfo5278Me37V2pZz6rH3Z5rXKLN4MNK9r6EhRpNsluixstVumMR5Z0RvwWTtGunVzHe1MCEi/uc4rcq1dy3RNcGvFmtWL9deXeUk+acdINz3PXjDaKbFsj4a2YDe70o6zV/T0oIt2qP1DH0",
-    "shortDescription": "da",
-    "id": 1693899533544
+    "website": "https://www.edsheeran.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg",
+    "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs."
   },
   {
-    "name": "Anders Pedersen",
-    "birthdate": "2023-09-15",
-    "activeSince": "2023-09-10",
+    "id": 3,
+    "name": "Ariana Grande",
+    "birthdate": "26-06-1993",
+    "activeSince": 2008,
     "genres": [
       "Pop",
-      "Country"
+      "R&B"
     ],
     "labels": [
-      "asd"
+      "Republic Records"
     ],
-    "website": "http://www.daniel.dk",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8cHBzX19czMzNWVlZ9fX1mZmbw8PDHx8dFRUUpKSmFhYXm5uadnZ3S0tJcXFw6OjqqqqowMDBRUVGKiopJSUkjIyOUlJQWFhbO5v8Ahv/g8P+x1/8dmP+BwP/V6v8vnv+ay//z+v9gsP+83f8y1my1AAALqUlEQVR4nO2de3ubOhLGWSXttl4DxjYQbIgvYPAldk53u2f3tN//e61mRkjgS2zsqDhbvX/UIBBIP8RoZlCfWJaRkZGRkZGRkZGRkZGRkZGRkZGRkdHH0x+ff4E+td3LlvTp24N2ffvcdi9b0qeHv2nX4z/b7mVL+gVwH//edifb0i+A+/CvtjvZln4F3L/a7mRb0g/38UfbfWxN+uE+/Gy7j61JP9zvbXexPWmH+/jvtrvYnvTD/bPtLrYn3XAf/9N2D1tUHe7ju+vbf9vuYYuqwf3+9ct768fvGvqCqnB/3zhVkwxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNMnA1ysDVKANXowxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNag53kbhKTrzxo/DIWZ3qWW6yOHGxTo/LT8VeRqd1l/jj7eDfSZw4HTxIt1l2Lu1a+2oON2P7GuSHHZ7WTzlFxJn2NpuC9WiPxfgzZM/w4zHPsuast+yxBA7aULhg6fEr3aOaw00O4HKtovpJKbsQ7hD+XbCIfmZYmLEMfgBuxELc6lrWAOEOlld0si01h7s6Bpexfu2k/eF9Ei6++tYUaQZrGKu88hNCBrj9AR5/yQTcXXFFH1tTY7jh4DhcVjOre1bhHFwH7cJLf42PKHNeJxbB9cd4PN8RXJtsw0dRY7jRCb",
-    "shortDescription": "sd",
-    "id": 1693900324027
+    "website": "https://www.arianagrande.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ariana_Grande_Grammys_Red_Carpet_2020.png",
+    "shortDescription": "Ariana Grande is an American singer with a wide vocal range and numerous chart-topping hits."
   },
   {
     "id": 4,
     "name": "Justin Bieber",
-    "birthdate": "March 1, 1994",
+    "birthdate": "01-03-1994",
     "activeSince": 2007,
     "genres": [
       "Pop",
@@ -68,7 +87,7 @@
   {
     "id": 5,
     "name": "Katy Perry",
-    "birthdate": "October 25, 1984",
+    "birthdate": "25-10-1984",
     "activeSince": 2001,
     "genres": [
       "Pop"
@@ -83,7 +102,7 @@
   {
     "id": 6,
     "name": "Drake",
-    "birthdate": "October 24, 1986",
+    "birthdate": "24-10-1986",
     "activeSince": 2001,
     "genres": [
       "Hip-Hop",
@@ -100,7 +119,7 @@
   {
     "id": 7,
     "name": "Adele",
-    "birthdate": "May 5, 1988",
+    "birthdate": "05-05-1988",
     "activeSince": 2006,
     "genres": [
       "Pop",
@@ -117,7 +136,7 @@
   {
     "id": 8,
     "name": "Bruno Mars",
-    "birthdate": "October 8, 1985",
+    "birthdate": "08-10-1985",
     "activeSince": 2004,
     "genres": [
       "Pop",
@@ -134,7 +153,7 @@
   {
     "id": 9,
     "name": "Rihanna",
-    "birthdate": "February 20, 1988",
+    "birthdate": "20-02-1988",
     "activeSince": 2005,
     "genres": [
       "Pop",
@@ -151,7 +170,7 @@
   {
     "id": 10,
     "name": "Shawn Mendes",
-    "birthdate": "August 8, 1998",
+    "birthdate": "08-08-1998",
     "activeSince": 2013,
     "genres": [
       "Pop",
@@ -168,7 +187,7 @@
   {
     "id": 11,
     "name": "Lady Gaga",
-    "birthdate": "March 28, 1986",
+    "birthdate": "28-03-1986",
     "activeSince": 2001,
     "genres": [
       "Pop",
@@ -186,7 +205,7 @@
   {
     "id": 12,
     "name": "John Legend",
-    "birthdate": "December 28, 1978",
+    "birthdate": "28-12-1978",
     "activeSince": 2004,
     "genres": [
       "R&B",
