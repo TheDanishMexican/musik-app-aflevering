@@ -1,6 +1,6 @@
 "use strict";
 
-import { createNew } from "../index.js";
+import { createNew, deleteArtist } from "../index.js";
 
 export function cancelClicked() {
     // document.querySelector("#cancelButton").removeEventListener("click", cancelClicked);
@@ -37,4 +37,9 @@ export function createNewClicked(event) {
 
     createNew(newArtist);
     cancelClicked();
+}
+
+export function deleteClicked(id) {
+    console.log(id);
+    deleteArtist(id);
 }

@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "name": "Beyoncé",
+    "birthdate": "September 4, 1981",
+    "activeSince": 1997,
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Columbia",
+      "Parkwood Entertainment"
+    ],
+    "website": "https://www.beyonce.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/lt/9/93/Beyonce_Formation.jpg",
+    "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances."
+  },
+  {
+    "name": "Daniel",
+    "birthdate": "2023-08-29",
+    "activeSince": "2023-09-05",
+    "genres": [
+      "Pop",
+      "Country"
+    ],
+    "labels": [
+      "The best label"
+    ],
+    "website": "http://www.daniel.dk",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAADJCAMAAADSHrQyAAAAhFBMVEX///8AAAD29vb09PT8/Pz4+Ph1dXXv7+/Pz8+kpKQYGBhVVVVmZmbp6elycnKwsLDGxsYTExMfHx/V1dWNjY1dXV22traVlZUuLi7l5eUmJibLy8u/v7+oqKiFhYV/f387OzsNDQ1GRkYsLCw1NTWdnZ1qampPT086OjpJSUlZWVnc3NyTE3ZPAAAJkklEQVR4nO2cC3uqOBCGEwgiKFZuCogi1svZ8v//385MCGoPbXefPd7Yec9plYg8+TKTySSECsEwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDMMwDPOPUY+uAHN3ZqdJOp2Nqk2SJJtqNDtOU2R6nFXJYTEOHl2/W7LwDiNffsMpmTuPruQtGX0nHpiNH13D22F3Kjdv5Wq8mi8O1e5K/XYuhhoTt63Et4syNU6iC/UfwUC1T1qB80/l4/RCffmQqt2c9AvtQsR/ncUvH1Cz23Ns1a0+lStwc+8sPnlI5W7M7AvtRBx24tcD7PPfahfuOebFwxNvtH8xjrud5YvBSf9Ju4gH3OV/0i4OnXj3nvW6Bz9qF3ujfUPBf0D8pF2JeWf4oc1sRj/a/Wz4oaV3vdqtbH1x9Ga0Hwc2zPVoVyKR0j7rPM/1HlHBG9KnXdVSHi7OMfMdmd+9ejelz+cXcBxdHHfD3MA6fJ/2ExZcTOxWRrt39+rdlB7tORV8nAvcgaZ2Pdo3uuS8UOsY7dUDKnhDerS3JRfrFUVbNLp//W7J79oXbUl0Hsz3/xe7n4yHn6OdWdAcen/Pu0wm7U4ydh9onI9NwabTfo5278Me37V2pZz6rH3Z5rXKLN4MNK9r6EhRpNsluixstVumMR5Z0RvwWTtGunVzHe1MCEi/uc4rcq1dy3RNcGvFmtWL9deXeUk+acdINz3PXjDaKbFsj4a2YDe70o6zV/T0oIt2qP1DH0",
+    "shortDescription": "da",
+    "id": 1693899533544
+  },
+  {
+    "name": "Anders Pedersen",
+    "birthdate": "2023-09-15",
+    "activeSince": "2023-09-10",
+    "genres": [
+      "Pop",
+      "Country"
+    ],
+    "labels": [
+      "asd"
+    ],
+    "website": "http://www.daniel.dk",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8cHBzX19czMzNWVlZ9fX1mZmbw8PDHx8dFRUUpKSmFhYXm5uadnZ3S0tJcXFw6OjqqqqowMDBRUVGKiopJSUkjIyOUlJQWFhbO5v8Ahv/g8P+x1/8dmP+BwP/V6v8vnv+ay//z+v9gsP+83f8y1my1AAALqUlEQVR4nO2de3ubOhLGWSXttl4DxjYQbIgvYPAldk53u2f3tN//e61mRkjgS2zsqDhbvX/UIBBIP8RoZlCfWJaRkZGRkZGRkZGRkZGRkZGRkZGRkdHH0x+ff4E+td3LlvTp24N2ffvcdi9b0qeHv2nX4z/b7mVL+gVwH//edifb0i+A+/CvtjvZln4F3L/a7mRb0g/38UfbfWxN+uE+/Gy7j61JP9zvbXexPWmH+/jvtrvYnvTD/bPtLrYn3XAf/9N2D1tUHe7ju+vbf9vuYYuqwf3+9ct768fvGvqCqnB/3zhVkwxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNMnA1ysDVKANXowxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNag53kbhKTrzxo/DIWZ3qWW6yOHGxTo/LT8VeRqd1l/jj7eDfSZw4HTxIt1l2Lu1a+2oON2P7GuSHHZ7WTzlFxJn2NpuC9WiPxfgzZM/w4zHPsuast+yxBA7aULhg6fEr3aOaw00O4HKtovpJKbsQ7hD+XbCIfmZYmLEMfgBuxELc6lrWAOEOlld0si01h7s6Bpexfu2k/eF9Ei6++tYUaQZrGKu88hNCBrj9AR5/yQTcXXFFH1tTY7jh4DhcVjOre1bhHFwH7cJLf42PKHNeJxbB9cd4PN8RXJtsw0dRY7jRCb",
+    "shortDescription": "sd",
+    "id": 1693900324027
+  },
+  {
+    "id": 4,
+    "name": "Justin Bieber",
+    "birthdate": "March 1, 1994",
+    "activeSince": 2007,
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Def Jam",
+      "RBMG"
+    ],
+    "website": "https://www.justinbiebermusic.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/220px-Justin_Bieber_in_2015.jpg",
+    "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his pop and R&B music."
+  },
+  {
+    "id": 5,
+    "name": "Katy Perry",
+    "birthdate": "October 25, 1984",
+    "activeSince": 2001,
+    "genres": [
+      "Pop"
+    ],
+    "labels": [
+      "Capitol"
+    ],
+    "website": "https://www.katyperry.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Katy_Perry_for_Vogue_Magazine%2C_2023.png",
+    "shortDescription": "Katy Perry is an American singer known for her chart-topping pop hits."
+  },
+  {
+    "id": 6,
+    "name": "Drake",
+    "birthdate": "October 24, 1986",
+    "activeSince": 2001,
+    "genres": [
+      "Hip-Hop",
+      "Rap"
+    ],
+    "labels": [
+      "OVO Sound",
+      "Republic"
+    ],
+    "website": "https://www.drakeofficial.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Drake_July_2016.jpg",
+    "shortDescription": "Drake is a Canadian rapper and songwriter known for his influential hip-hop music."
+  },
+  {
+    "id": 7,
+    "name": "Adele",
+    "birthdate": "May 5, 1988",
+    "activeSince": 2006,
+    "genres": [
+      "Pop",
+      "Soul"
+    ],
+    "labels": [
+      "XL Recordings",
+      "Columbia"
+    ],
+    "website": "https://www.adele.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/2013_GGA_Adele_%28cropped%29.jpg/170px-2013_GGA_Adele_%28cropped%29.jpg",
+    "shortDescription": "Adele is a British singer known for her powerful soulful voice and heartfelt ballads."
+  },
+  {
+    "id": 8,
+    "name": "Bruno Mars",
+    "birthdate": "October 8, 1985",
+    "activeSince": 2004,
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Atlantic",
+      "Elektra"
+    ],
+    "website": "https://www.brunomars.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg",
+    "shortDescription": "Bruno Mars is an American singer known for his versatile music style and energetic performances."
+  },
+  {
+    "id": 9,
+    "name": "Rihanna",
+    "birthdate": "February 20, 1988",
+    "activeSince": 2005,
+    "genres": [
+      "Pop",
+      "R&B"
+    ],
+    "labels": [
+      "Def Jam",
+      "Roc Nation"
+    ],
+    "website": "https://www.rihannanow.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png",
+    "shortDescription": "Rihanna is a Barbadian singer known for her iconic pop and R&B hits."
+  },
+  {
+    "id": 10,
+    "name": "Shawn Mendes",
+    "birthdate": "August 8, 1998",
+    "activeSince": 2013,
+    "genres": [
+      "Pop",
+      "Singer-Songwriter"
+    ],
+    "labels": [
+      "Island",
+      "Def Jam"
+    ],
+    "website": "https://www.shawnmendesofficial.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Shawn_Mendes_takes_a_lie_detector_test.jpg",
+    "shortDescription": "Shawn Mendes is a Canadian singer-songwriter known for his heartfelt pop songs and acoustic performances."
+  },
+  {
+    "id": 11,
+    "name": "Lady Gaga",
+    "birthdate": "March 28, 1986",
+    "activeSince": 2001,
+    "genres": [
+      "Pop",
+      "Dance",
+      "Electropop"
+    ],
+    "labels": [
+      "Streamline",
+      "Interscope"
+    ],
+    "website": "https://www.ladygaga.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg",
+    "shortDescription": "Lady Gaga is an American singer known for her unique style and energetic pop and dance music."
+  },
+  {
+    "id": 12,
+    "name": "John Legend",
+    "birthdate": "December 28, 1978",
+    "activeSince": 2004,
+    "genres": [
+      "R&B",
+      "Soul"
+    ],
+    "labels": [
+      "GOOD Music",
+      "Columbia"
+    ],
+    "website": "https://www.johnlegend.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/John_Legend_2019_by_Glenn_Francis.jpg/1200px-John_Legend_2019_by_Glenn_Francis.jpg",
+    "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs."
+  }
+]

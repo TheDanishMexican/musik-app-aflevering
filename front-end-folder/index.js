@@ -27,21 +27,30 @@ export async function getData() {
 }
 
 export async function createNew(newArtist) {
-    newArtist.id = new Date().getTime();
-
     const json = JSON.stringify(newArtist);
     const response = await fetch(`${endpoint}/artists/data`,
-    {
+    {   
+        headers: {'Content-Type': 'application/json'},
         method: "POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
         body: json
     });
-    if(response.ok){
+    if(response.ok) {
         console.log("New artist created");
     }
 }
+
+export async function deleteArtist(id) {
+    const idAsInteger = Number(id);
+
+    const response = await fetch(`${endpoint}/artists/data/${idAsInteger}`,
+    {method: 'DELETE'}
+    );
+    if(response.ok) {
+        console.log(`Artist with ID:${id} deleted`);
+    } else {
+        console.log('nah man try again');
+    }
+};
 
 
 
