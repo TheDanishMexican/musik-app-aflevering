@@ -47,8 +47,34 @@ export function createNewClicked(event) {
 export function updateClicked(artist) {
     showUpdateForm();
     const form = document.querySelector("#updateForm");
+
     form.name.value = artist.name;
     form.birthdate.value = artist.birthdate;
+    form.activeSince.value = artist.activeSince;
+    form.labels.value = artist.labels.join(', ');
+    form.website.value = artist.website;
+    form.image.value = artist.image;
+    form.shortDescription.value = artist.shortDescription;
+
+    let genres = [];
+
+// check if genres is an array
+    if (Array.isArray(artist.genres)) {
+        genres = artist.genres;
+    };
+
+// loop through checkboxes and set the ones that are checked
+    const genreCheckboxes = form.querySelectorAll('input[name="genres"]');
+    genreCheckboxes.forEach(checkbox => {
+        if (genres.includes(checkbox.value)) {
+            checkbox.checked = true;
+        } else {
+            checkbox.checked = false;
+        }
+    });
+
+    
+    
 }
 
 export function updateArtistClicked(event) {
