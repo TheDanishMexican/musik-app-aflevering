@@ -1,205 +1,158 @@
 [
   {
-    "id": "1",
-    "name": "Beyon",
+    "id": 1,
+    "name": "Beyoncé",
     "birthdate": "1981-09-04",
-    "activeSince": "1997",
-    "genres": [
-      "Pop",
-      "R&B"
-    ],
-    "labels": [
-      "Columbia",
-      "Parkwood Entertainment"
-    ],
+    "activeSince": 1997,
+    "genres": ["Pop", "R&B"],
+    "labels": ["Columbia", "Parkwood Entertainment"],
     "website": "https://www.beyonce.com/",
     "image": "https://upload.wikimedia.org/wikipedia/lt/9/93/Beyonce_Formation.jpg",
-    "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances."
+    "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances.",
+    "favorite": false
   },
   {
-    "id": "2",
-    "name": "Ed Sheerand",
+    "id": 2,
+    "name": "Ed Sheeran",
     "birthdate": "1991-02-17",
-    "activeSince": "2004",
-    "genres": [
-      "Pop",
-      "Folk",
-      "Singer-Songwriter"
-    ],
-    "labels": [
-      "Asylum",
-      "Atlantic"
-    ],
+    "activeSince": 2004,
+    "genres": ["Pop", "Folk", "Singer-Songwriter"],
+    "labels": ["Asylum", "Atlantic"],
     "website": "https://www.edsheeran.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg",
-    "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs."
+    "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs.",
+    "favorite": false
   },
   {
-    "id": "3",
-    "name": "Ariana Small",
+    "id": 3,
+    "name": "Ariana Grande",
     "birthdate": "1993-06-26",
-    "activeSince": "2008",
-    "genres": [
-      "Pop",
-      "R&B"
-    ],
-    "labels": [
-      "Republic Records"
-    ],
+    "activeSince": 2008,
+    "genres": ["Pop", "R&B"],
+    "labels": ["Republic Records"],
     "website": "https://www.arianagrande.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ariana_Grande_Grammys_Red_Carpet_2020.png",
-    "shortDescription": "Ariana Grande is an American singer with a wide vocal range and numerous chart-topping hits."
+    "shortDescription": "Ariana Grande is an American singer with a wide vocal range and numerous chart-topping hits.",
+    "favorite": false
   },
   {
-    "id": "4",
-    "name": "Justin Biebersd",
+    "id": 4,
+    "name": "Justin Bieber",
     "birthdate": "1994-03-01",
-    "activeSince": "2007",
-    "labels": [
-      "Def Jam",
-      "RBMG"
-    ],
+    "activeSince": 2007,
+    "genres": ["Pop", "R&B"],
+    "labels": ["Def Jam", "RBMG"],
     "website": "https://www.justinbiebermusic.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/220px-Justin_Bieber_in_2015.jpg",
     "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his pop and R&B music.",
-    "genres": [
-      "Pop",
-      "R&B"
-    ]
+    "favorite": false
   },
   {
     "id": 5,
     "name": "Katy Perry",
     "birthdate": "1984-10-25",
     "activeSince": 2001,
-    "genres": [
-      "Pop"
-    ],
-    "labels": [
-      "Capitol"
-    ],
+    "genres": ["Pop"],
+    "labels": ["Capitol"],
     "website": "https://www.katyperry.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Katy_Perry_for_Vogue_Magazine%2C_2023.png",
-    "shortDescription": "Katy Perry is an American singer known for her chart-topping pop hits."
+    "shortDescription": "Katy Perry is an American singer known for her chart-topping pop hits.",
+    "favorite": false
   },
   {
-    "id": "6",
-    "name": "Drakesd",
+    "id": 6,
+    "name": "Drake",
     "birthdate": "1986-10-24",
-    "activeSince": "2001",
-    "labels": [
-      "OVO Sound",
-      "Republic"
-    ],
+    "activeSince": 2001,
+    "genres": ["Hip-Hop", "Rap"],
+    "labels": ["OVO Sound", "Republic"],
     "website": "https://www.drakeofficial.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Drake_July_2016.jpg",
     "shortDescription": "Drake is a Canadian rapper and songwriter known for his influential hip-hop music.",
-    "genres": [
-      "Hip-Hop",
-      "Rap"
-    ]
+    "favorite": false
   },
   {
     "id": 7,
     "name": "Adele",
     "birthdate": "1988-05-05",
     "activeSince": 2006,
-    "genres": [
-      "Pop",
-      "Soul"
-    ],
-    "labels": [
-      "XL Recordings",
-      "Columbia"
-    ],
+    "genres": ["Pop", "Soul"],
+    "labels": ["XL Recordings", "Columbia"],
     "website": "https://www.adele.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/2013_GGA_Adele_%28cropped%29.jpg/170px-2013_GGA_Adele_%28cropped%29.jpg",
-    "shortDescription": "Adele is a British singer known for her powerful soulful voice and heartfelt ballads."
+    "shortDescription": "Adele is a British singer known for her powerful soulful voice and heartfelt ballads.",
+    "favorite": false
   },
   {
-    "id": "8",
-    "name": "Bruno Marsds",
+    "id": 8,
+    "name": "Bruno Mars",
     "birthdate": "1985-08-10",
-    "activeSince": "2004",
-    "labels": [
-      "Atlantic",
-      "Elektra"
-    ],
+    "activeSince": 2004,
+    "genres": ["Pop", "R&B"],
+    "labels": ["Atlantic", "Elektra"],
     "website": "https://www.brunomars.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/BrunoMars24KMagicWorldTourLive_%28cropped%29.jpg",
     "shortDescription": "Bruno Mars is an American singer known for his versatile music style and energetic performances.",
-    "genres": [
-      "Pop",
-      "R&B"
-    ]
+    "favorite": false
   },
   {
     "id": 9,
     "name": "Rihanna",
     "birthdate": "1988-02-20",
     "activeSince": 2005,
-    "genres": [
-      "Pop",
-      "R&B"
-    ],
-    "labels": [
-      "Def Jam",
-      "Roc Nation"
-    ],
+    "genres": ["Pop", "R&B"],
+    "labels": ["Def Jam", "Roc Nation"],
     "website": "https://www.rihannanow.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Rihanna_Fenty_2018.png",
-    "shortDescription": "Rihanna is a Barbadian singer known for her iconic pop and R&B hits."
+    "shortDescription": "Rihanna is a Barbadian singer known for her iconic pop and R&B hits.",
+    "favorite": false
   },
   {
     "id": 10,
     "name": "Shawn Mendes",
     "birthdate": "1998-08-08",
     "activeSince": 2013,
-    "genres": [
-      "Pop",
-      "Singer-Songwriter"
-    ],
-    "labels": [
-      "Island",
-      "Def Jam"
-    ],
+    "genres": ["Pop", "Singer-Songwriter"],
+    "labels": ["Island", "Def Jam"],
     "website": "https://www.shawnmendesofficial.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Shawn_Mendes_takes_a_lie_detector_test.jpg",
-    "shortDescription": "Shawn Mendes is a Canadian singer-songwriter known for his heartfelt pop songs and acoustic performances."
+    "shortDescription": "Shawn Mendes is a Canadian singer-songwriter known for his heartfelt pop songs and acoustic performances.",
+    "favorite": false
   },
   {
     "id": 11,
     "name": "Lady Gaga",
     "birthdate": "1986-03-28",
     "activeSince": 2001,
-    "genres": [
-      "Pop",
-      "Dance",
-      "Electropop"
-    ],
-    "labels": [
-      "Streamline",
-      "Interscope"
-    ],
+    "genres": ["Pop", "Dance", "Electropop"],
+    "labels": ["Streamline", "Interscope"],
     "website": "https://www.ladygaga.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Lady_Gaga_at_Joe_Biden%27s_inauguration_%28cropped_5%29.jpg",
-    "shortDescription": "Lady Gaga is an American singer known for her unique style and energetic pop and dance music."
+    "shortDescription": "Lady Gaga is an American singer known for her unique style and energetic pop and dance music.",
+    "favorite": false
   },
   {
-    "id": "12",
-    "name": "John History",
+    "id": 12,
+    "name": "John Legend",
     "birthdate": "1978-12-28",
-    "activeSince": "2004",
-    "genres": [
-      "R&B",
-      "Soul"
-    ],
-    "labels": [
-      "GOOD Music",
-      "Columbia"
-    ],
+    "activeSince": 2004,
+    "genres": ["R&B", "Soul"],
+    "labels": ["GOOD Music", "Columbia"],
     "website": "https://www.johnlegend.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/John_Legend_2019_by_Glenn_Francis.jpg/1200px-John_Legend_2019_by_Glenn_Francis.jpg",
-    "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs."
+    "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs.",
+    "favorite": false
+  },
+  {
+    "name": "Pop Guy",
+    "birthdate": "2023-09-05",
+    "activeSince": 2000,
+    "genres": ["Pop"],
+    "labels": ["All", "of", "them"],
+    "website": "http://www.daniel.dk",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8",
+    "shortDescription": "asd",
+    "favorite": false,
+    "id": 1693983879734
   }
 ]
