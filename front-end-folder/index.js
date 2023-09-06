@@ -53,7 +53,14 @@ export async function deleteArtist(id) {
 };
 
 export async function updateArtist(artist){
-    console.log(artist);
+    const idAsInteger = Number(artist.id)
+    const json = JSON.stringify(artist);
+
+    const response = await fetch(`${endpoint}/artist/data/${idAsInteger}`, {
+        headers: {'Content-Type': 'application/json'},
+        method: 'PATCH',
+        body: json,
+    })
 }
 
 

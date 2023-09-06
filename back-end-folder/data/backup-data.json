@@ -1,22 +1,5 @@
 [
   {
-    "id": 0,
-    "name": "Taylor Swift",
-    "birthdate": "1989-12-13",
-    "activeSince": 2006,
-    "genres": [
-      "Pop",
-      "Country"
-    ],
-    "labels": [
-      "Big Machine",
-      "Republic Records"
-    ],
-    "website": "https://www.taylorswift.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Taylor_Swift_Red_Tour_2%2C_2013.jpg",
-    "shortDescription": "Taylor Swift is an American singer-songwriter known for her catchy pop and country songs."
-  },
-  {
     "id": 1,
     "name": "Beyoncé",
     "birthdate": "1981-09-04",
@@ -237,5 +220,4 @@
     "id": 1693983879734
   }
 ]
-
 
