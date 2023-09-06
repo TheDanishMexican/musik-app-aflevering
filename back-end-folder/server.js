@@ -29,7 +29,7 @@ app.post('/artists/data', async (req, res) => {
     res.json(artists);
 });
 
-app.patch('/artists/data/:id', async (req,res) => {
+app.put('/artists/data/:id', async (req,res) => {
 // get ID to update and what to update with
     const artistId = Number(req.params.id);
     const updatedArtistData = req.body;
@@ -39,24 +39,20 @@ app.patch('/artists/data/:id', async (req,res) => {
     const artists = JSON.parse(data);
 
 // find artist index to match ID
-    const artistIndex =  artists.filter(a => a.id !==artistId);
+    const artistToUpdate =  artists.find(artist => artist.id === artistId);
 
-// Get the existing artist object
-    const existingArtist = artists[artistIndex];
-
-// Update the existing artist properties with the new data
-    for (const key in updatedArtistData) {
-      if (updatedArtistData.hasOwnProperty(key)) {
-        existingArtist[key] = updatedArtistData[key];
-      }
-    }
+    for(const key in artistToUpdate) {
+        if(key !== 'id'){
+            artistToUpdate[key] = updatedArtistData[key]
+        }
+    };
 
 // update the data file with the new data
     await fs.writeFile('data/data.json', JSON.stringify(artists, null, 2));
-    
+
 // response
     res.json(artists);
-})
+});
 
 app.delete('/artists/data/:id', async (req, res) => {
 // get artistID to delete

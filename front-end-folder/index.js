@@ -56,12 +56,17 @@ export async function updateArtist(artist){
     const idAsInteger = Number(artist.id)
     const json = JSON.stringify(artist);
 
-    const response = await fetch(`${endpoint}/artist/data/${idAsInteger}`, {
+    const response = await fetch(`${endpoint}/artists/data/${idAsInteger}`, {
         headers: {'Content-Type': 'application/json'},
-        method: 'PATCH',
+        method: 'PUT',
         body: json,
-    })
-}
+    });
+console.log(await response.json());
+    if(response.ok){
+        const artists = await response.json();
+        showAllArtists(artists);
+    }
+};
 
 
 

@@ -33,6 +33,6 @@ export function showOneArtist(artist) {
     .addEventListener("click", () => updateClicked(artist));
 
     document.querySelector('#artistTableBody .artist-row:last-child .delete-button')
-    .addEventListener("click", () => deleteArtist(`${artist.id}`));
+    .addEventListener("click", () => deleteArtist(artist.id));
 }
 

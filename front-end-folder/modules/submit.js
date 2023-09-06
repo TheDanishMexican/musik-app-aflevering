@@ -93,12 +93,12 @@ export function updateArtistClicked(event) {
     const image = form.image.value;
     const shortDescription = form.shortDescription.value;
 
-    const selectedGenres = [];
+    const genres = [];
     const checkboxes = form.querySelectorAll(".genre-checkbox");
 
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
-            selectedGenres.push(checkbox.value);
+            genres.push(checkbox.value);
         }
     });
 
@@ -111,7 +111,7 @@ export function updateArtistClicked(event) {
         website,
         image,
         shortDescription,
-        selectedGenres
+        genres
     }
     
     updateArtist(artist);
