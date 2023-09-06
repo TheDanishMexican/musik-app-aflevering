@@ -1,6 +1,6 @@
 "use strict";
 
-import { createNew, deleteArtist } from "../index.js";
+import { createNew, updateArtist } from "../index.js";
 import { showUpdateForm } from "./dialogue.js";
 
 export function cancelClicked() {
@@ -45,9 +45,13 @@ export function createNewClicked(event) {
 }
 
 export function updateClicked(artist) {
-    showUpdateForm();
     const form = document.querySelector("#updateForm");
 
+    document.querySelector("#updateForm")
+    .addEventListener("submit", updateArtistClicked)
+
+    showUpdateForm();
+    form.setAttribute('data-artist-id', artist.id);
     form.name.value = artist.name;
     form.birthdate.value = artist.birthdate;
     form.activeSince.value = artist.activeSince;
@@ -72,11 +76,43 @@ export function updateClicked(artist) {
             checkbox.checked = false;
         }
     });
-
-    
     
 }
 
 export function updateArtistClicked(event) {
     event.preventDefault();
+    
+    const form = event.target;
+
+    const id = form.getAttribute('data-artist-id');
+    const name = form.name.value;
+    const birthdate = form.birthdate.value;
+    const activeSince = form.activeSince.value;
+    const labels = form.labels.value.split(',').map(label => label.trim());
+    const website = form.website.value;
+    const image = form.image.value;
+    const shortDescription = form.shortDescription.value;
+
+    const selectedGenres = [];
+    const checkboxes = form.querySelectorAll(".genre-checkbox");
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            selectedGenres.push(checkbox.value);
+        }
+    });
+
+    const artist = {
+        id,
+        name,
+        birthdate,
+        activeSince,
+        labels,
+        website,
+        image,
+        shortDescription,
+        selectedGenres
+    }
+    
+    updateArtist(artist);
 }

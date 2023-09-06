@@ -1,22 +1,5 @@
 [
   {
-    "id": 0,
-    "name": "Taylor Swift",
-    "birthdate": "1989-12-13",
-    "activeSince": 2006,
-    "genres": [
-      "Pop",
-      "Country"
-    ],
-    "labels": [
-      "Big Machine",
-      "Republic Records"
-    ],
-    "website": "https://www.taylorswift.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Taylor_Swift_Red_Tour_2%2C_2013.jpg",
-    "shortDescription": "Taylor Swift is an American singer-songwriter known for her catchy pop and country songs."
-  },
-  {
     "id": 1,
     "name": "Beyoncé",
     "birthdate": "1981-09-04",
@@ -218,5 +201,22 @@
     "website": "https://www.johnlegend.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/John_Legend_2019_by_Glenn_Francis.jpg/1200px-John_Legend_2019_by_Glenn_Francis.jpg",
     "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs."
+  },
+  {
+    "name": "Pop Guy",
+    "birthdate": "2023-09-05",
+    "activeSince": "2000",
+    "genres": [
+      "Pop"
+    ],
+    "labels": [
+      "All",
+      "of",
+      "them"
+    ],
+    "website": "http://www.daniel.dk",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8cHBzX19czMzNWVlZ9fX1mZmbw8PDHx8dFRUUpKSmFhYXm5uadnZ3S0tJcXFw6OjqqqqowMDBRUVGKiopJSUkjIyOUlJQWFhbO5v8Ahv/g8P+x1/8dmP+BwP/V6v8vnv+ay//z+v9gsP+83f8y1my1AAALqUlEQVR4nO2de3ubOhLGWSXttl4DxjYQbIgvYPAldk53u2f3tN//e61mRkjgS2zsqDhbvX/UIBBIP8RoZlCfWJaRkZGRkZGRkZGRkZGRkZGRkZGRkdHH0x+ff4E+td3LlvTp24N2ffvcdi9b0qeHv2nX4z/b7mVL+gVwH//edifb0i+A+/CvtjvZln4F3L/a7mRb0g/38UfbfWxN+uE+/Gy7j61JP9zvbXexPWmH+/jvtrvYnvTD/bPtLrYn3XAf/9N2D1tUHe7ju+vbf9vuYYuqwf3+9ct768fvGvqCqnB/3zhVkwxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNMnA1ysDVKANXowxcjTJwNcrA1SgDV6MMXI0ycDXKwNUoA1ejDFyNag53kbhKTrzxo/DIWZ3qWW6yOHGxTo/LT8VeRqd1l/jj7eDfSZw4HTxIt1l2Lu1a+2oON2P7GuSHHZ7WTzlFxJn2NpuC9WiPxfgzZM/w4zHPsuast+yxBA7aULhg6fEr3aOaw00O4HKtovpJKbsQ7hD+XbCIfmZYmLEMfgBuxELc6lrWAOEOlld0si01h7s6Bpexfu2k/eF9Ei6++tYUaQZrGKu88hNCBrj9AR5/yQTcXXFFH1tTY7jh4DhcVjOre1bhHFwH7cJLf42PKHNeJxbB9cd4PN8RXJtsw0dRY7jRCb",
+    "shortDescription": "asd",
+    "id": 1693983879734
   }
 ]
