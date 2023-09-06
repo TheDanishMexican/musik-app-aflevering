@@ -35,7 +35,8 @@ export async function createNew(newArtist) {
         body: json
     });
     if(response.ok) {
-        console.log("New artist created");
+       const artists = await response.json();
+       showAllArtists(artists);
     }
 }
 
@@ -45,11 +46,6 @@ export async function deleteArtist(id) {
     const response = await fetch(`${endpoint}/artists/data/${idAsInteger}`,
     {method: 'DELETE'}
     );
-    if(response.ok) {
-        console.log(`Artist with ID:${id} deleted`);
-    } else {
-        console.log('nah man try again');
-    }
 };
 
 export async function updateArtist(artist){
@@ -61,7 +57,7 @@ export async function updateArtist(artist){
         method: 'PUT',
         body: json,
     });
-console.log(await response.json());
+
     if(response.ok){
         const artists = await response.json();
         showAllArtists(artists);

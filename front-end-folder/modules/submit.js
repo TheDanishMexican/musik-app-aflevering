@@ -4,7 +4,6 @@ import { createNew, updateArtist } from "../index.js";
 import { showUpdateForm } from "./dialogue.js";
 
 export function cancelClicked() {
-    // document.querySelector("#cancelButton").removeEventListener("click", cancelClicked);
     document.querySelector("#create-new-dialog").close();
     document.querySelector("#artistForm").reset();
 }
@@ -15,8 +14,6 @@ export function cancelClickedInUpdate() {
 
 export function createNewClicked(event) {
     event.preventDefault();
-
-    // document.querySelector("#artistForm").removeEventListener("submit", createNewClicked);
 
     const formInput = event.target;
     const selectedGenres = [];
