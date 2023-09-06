@@ -1,7 +1,7 @@
 "use strict";
 
 import { deleteArtist, getData } from "../index.js";
-import { updateClicked } from "./submit.js";
+import { favoriteArtists, updateClicked } from "./submit.js";
 
 let currentArtists = [];
 
@@ -20,7 +20,7 @@ export function showAllArtists(allArtists) {
 };
 
 export function showOneArtist(artist) {
-      const genres = artist.genres ? artist.genres.join(', ') : '';
+  const genres = artist.genres ? artist.genres.join(', ') : '';
   const labels = artist.labels ? artist.labels.join(', ') : '';
 
     const html = /*html*/ `
@@ -35,6 +35,10 @@ export function showOneArtist(artist) {
       <td>${artist.shortDescription}</td>
       <td><button class="update-button">Update</button></td>
       <td><button class="delete-button">Delete</button></td>
+      <td>            
+        <input type="checkbox" id="favorite" class="favorite-checkbox" name="favorite" value="favorite">
+        <label for="favorite">Favorite</label><br>
+      </td>
     </tr>
     `
 
@@ -45,56 +49,25 @@ export function showOneArtist(artist) {
 
     document.querySelector('#artistTableBody .artist-row:last-child .delete-button')
     .addEventListener("click", () => deleteArtist(artist.id));
+
+    document.querySelector("#artistTableBody .artist-row:last-child .favorite-checkbox")
+    .addEventListener('change', () => favoriteArtists(artist))
 }
 
-// export async function filterArtists(event) {
-//     const artists = await getData();
-//     const genre = event.target.value;
-
-//     if(genre === '') {
-//         showAllArtists(artists);
-//     } else {
-//         const filteredArtists = artists.filter(artist => artist.genres.includes(genre));
-//         showAllArtists(filteredArtists);
-//     }   
-// }
-
-// export async function sortArtists(event) {
-//     const artists = await getData();
-//     const sortingOption = event.target.value;
-
-//     if (sortingOption === 'name') {
-//         // Sort artists by name
-//         const sortedArtists = artists.sort((a, b) => a.name.localeCompare(b.name));
-//         showAllArtists(sortedArtists);
-//     } else if (sortingOption === 'gender') {
-//         // Sort artists by birthdate
-//         const sortedArtists = artists.sort((a, b) => a.gender.localeCompare(b.gender));
-//         showAllArtists(sortedArtists);
-//     } else {
-//         showAllArtists(artists);
-//     }
-//     // Add more sorting options as needed
-// }
-
-    // Function to update the current artists array and display them
 async function SortAndFilterArtists() {
     const artists = await getData();
-    currentArtists = []; // Clear the currentArtists array
+    currentArtists = []; 
 
     const filterSelect = document.querySelector("#filterSelect")
     const sortingSelect = document.querySelector('#sortSelect');
 
-    // Apply filtering based on the selected filter
     const genre = filterSelect.value;
     if (genre !== '') {
         currentArtists = artists.filter(artist => artist.genres.includes(genre));
     } else {
-        // If no filter selected, copy all artists
         currentArtists = artists.slice();
     }
 
-    // Apply sorting based on the selected sorting option
     const sortingOption = sortingSelect.value;
     if (sortingOption === 'name') {
         currentArtists.sort((a, b) => a.name.localeCompare(b.name));
@@ -104,6 +77,5 @@ async function SortAndFilterArtists() {
         currentArtists.sort((a, b) => b.activeSince-a.activeSince);
     }
 
-    // Display the filtered and sorted artists
     showAllArtists(currentArtists);
 }

@@ -59,12 +59,10 @@ export function updateClicked(artist) {
 
     let genres = [];
 
-// check if genres is an array
     if (Array.isArray(artist.genres)) {
         genres = artist.genres;
     };
 
-// loop through checkboxes and set the ones that are checked
     const genreCheckboxes = form.querySelectorAll('input[name="genres"]');
     genreCheckboxes.forEach(checkbox => {
         if (genres.includes(checkbox.value)) {
@@ -73,7 +71,6 @@ export function updateClicked(artist) {
             checkbox.checked = false;
         }
     });
-    
 }
 
 export function updateArtistClicked(event) {
@@ -112,4 +109,14 @@ export function updateArtistClicked(event) {
     }
     
     updateArtist(artist);
+}
+
+export async function favoriteArtists(artist) {
+    console.log(`${artist.name} favorite status before checkbox: ${artist.favorite}`);
+    if(artist.checkbox !== true) {
+        artist.favorite = true;
+    } else {
+        artist.favorite = false;
+    }
+    console.log(`${artist.name} favorite status after checkbox: ${artist.favorite}`);
 }
