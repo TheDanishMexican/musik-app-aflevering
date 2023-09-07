@@ -115,8 +115,7 @@ export async function favoriteArtists(artist) {
     console.log(`${artist.name} favorite status before checkbox: ${artist.favorite}`);
     if(artist.checkbox !== true) {
         artist.favorite = true;
-    } else {
-        artist.favorite = false;
     }
-    console.log(`${artist.name} favorite status after checkbox: ${artist.favorite}`);
+    console.log(artist);
+    updateArtist(artist);
 }

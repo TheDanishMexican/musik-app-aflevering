@@ -14,6 +14,15 @@ app.get('/artists/data', async (req, res) => {
     res.json(artists);
 });
 
+/** tjek om id'et overhoved findes i data.json - typisk undefined error problem */
+app.get('/artists/data/:id', async (req, res) => {
+    const artistId = Number(req.params.id);
+    const data = await fs.readFile('data/data.json');
+    const artists = JSON.parse(data);
+    const artist = artists.find(artist => artist.id === artistId);
+    res.json(artist);
+});
+
 app.post('/artists/data', async (req, res) => {
     // get new artist request
         const newArtist = req.body;
@@ -32,7 +41,8 @@ app.post('/artists/data', async (req, res) => {
 app.put('/artists/data/:id', async (req,res) => {
     // get ID to update and what to update with
         const artistId = Number(req.params.id);
-        const updatedArtistData = req.body;
+        const updatedArtistData = req.body;  
+        console.log(updatedArtistData);
 
     // read existing data
         const data = await fs.readFile('data/data.json');

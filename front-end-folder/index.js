@@ -34,6 +34,7 @@ export async function createNew(newArtist) {
         method: "POST",
         body: json
     });
+
     if(response.ok) {
        const artists = await response.json();
        showAllArtists(artists);
@@ -46,6 +47,11 @@ export async function deleteArtist(id) {
     const response = await fetch(`${endpoint}/artists/data/${idAsInteger}`,
     {method: 'DELETE'}
     );
+
+    // if(response.ok) {
+    //     const artists = await response.json();
+    //     showAllArtists(artists);
+    // }
 };
 
 export async function updateArtist(artist){
@@ -58,10 +64,10 @@ export async function updateArtist(artist){
         body: json,
     });
 
-    if(response.ok){
-        const artists = await response.json();
-        showAllArtists(artists);
-    }
+    // if(response.ok) {
+    //     const artists = await response.json();
+    //     showAllArtists(artists);
+    // }
 };
 
 
