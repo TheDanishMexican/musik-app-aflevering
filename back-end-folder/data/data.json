@@ -15,7 +15,7 @@
     "website": "https://www.beyonce.com/",
     "image": "https://upload.wikimedia.org/wikipedia/lt/9/93/Beyonce_Formation.jpg",
     "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 2,
@@ -57,7 +57,7 @@
     "id": 4,
     "name": "Justin Bieber",
     "birthdate": "1994-03-01",
-    "activeSince": 2007,
+    "activeSince": "2007",
     "genres": [
       "Pop",
       "R&B"
@@ -69,7 +69,7 @@
     "website": "https://www.justinbiebermusic.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Justin_Bieber_in_2015.jpg/220px-Justin_Bieber_in_2015.jpg",
     "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his pop and R&B music.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 5,
