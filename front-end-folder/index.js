@@ -2,7 +2,7 @@
 
 window.addEventListener("load", start);
 
-import { cancelClicked } from "./modules/submit.js";
+import { cancelClicked, cancelClickedInUpdate } from "./modules/submit.js";
 import { showCreateForm } from "./modules/dialogue.js";
 import { showAllArtists } from "./modules/display.js";
 
@@ -49,14 +49,13 @@ export async function deleteArtist(id) {
     {method: 'DELETE'}
     );
 
-    // if(response.ok) {
-    //     const artists = await response.json();
-    //     showAllArtists(artists);
-    // }
+    if(response.ok) {
+        const artists = await response.json();
+        showAllArtists(artists);
+    }
 };
 
 export async function updateArtist(artist){
-    console.log(artist);
     const idAsInteger = Number(artist.id)
     const json = JSON.stringify(artist);
 
@@ -66,10 +65,11 @@ export async function updateArtist(artist){
         body: json,
     });
 
-    // if(response.ok) {
-    //     const artists = await response.json();
-    //     showAllArtists(artists);
-    // }
+    if(response.ok) {
+        const artists = await response.json();
+        showAllArtists(artists);
+        cancelClickedInUpdate();
+    }
 };
 
 

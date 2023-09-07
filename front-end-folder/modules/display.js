@@ -51,7 +51,7 @@ export function showOneArtist(artist) {
     .addEventListener("click", () => deleteArtist(artist.id));
 
     document.querySelector("#artistTableBody .artist-row:last-child .favorite-checkbox")
-    .addEventListener('change', () => favoriteArtists(artist))
+    .addEventListener('click', () => favoriteArtists(artist))
 }
 
 async function SortAndFilterArtists() {
