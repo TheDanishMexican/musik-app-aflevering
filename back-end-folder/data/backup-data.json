@@ -142,18 +142,6 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/John_Legend_2019_by_Glenn_Francis.jpg/1200px-John_Legend_2019_by_Glenn_Francis.jpg",
     "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs.",
     "favorite": false
-  },
-  {
-    "name": "Pop Guy",
-    "birthdate": "2023-09-05",
-    "activeSince": 2000,
-    "genres": ["Pop"],
-    "labels": ["All", "of", "them"],
-    "website": "http://www.daniel.dk",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8",
-    "shortDescription": "asd",
-    "favorite": false,
-    "id": 1693983879734
   }
 ]
 
