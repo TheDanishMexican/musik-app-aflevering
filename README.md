@@ -1,5 +1,7 @@
 # musik-app-aflevering
-Velkommen til min musik artist app som bevidst er stylet efter wikipedia da jeg synes det er meget flot.
+Velkommen til min musik artist app. 
+
+Læs og følg nedenstående for at få den bedste oplevelse af app'en.
 
 De 2 foldere back-end og front-end skal åbnes i separate vinduer af code editoren, da der ellers opstår en reload fejl på alle knapper.
 
