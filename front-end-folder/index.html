@@ -73,21 +73,13 @@
         <p>We are a platform dedicated to showcasing talented artists from around the world.</p>
     </section>
 
-    <section id="features">
-        <h2>Features</h2>
-        <ul>
-            <li>Discover new artists</li>
-            <li>Follow your favorite artists</li>
-        </ul>
-    </section>
-
     <footer>
         <p>&copy; 2023 Music Artist App</p>
     </footer> 
 
     <dialog id="create-new-dialog">
         <form id="artistForm">
-            <h2>Add artist</h2>
+            <h2>Add artist</h2><br>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -138,7 +130,8 @@
 
     <dialog id="update-dialog">
         <form id="updateForm">
-            <h2>Add artist</h2>
+            <h2>Update artist</h2>
+            <br>
             <label for="name">Name:</label>
             <input type="text" id="nameInUpdate" name="name" required><br><br>
 
@@ -148,7 +141,7 @@
             <label for="activeSince">Active since year:</label>
             <input type="number" id="activeSinceInUpdate" name="activeSince" min="1950" max="2023" placeholder="YYYY"><br><br>
 
-            <label>Genres:</label><br>
+            <label>Genres:</label><br><br>
             <input type="checkbox" id="popInUpdate" class="genre-checkbox" name="genres" value="Pop">
             <label for="pop">Pop</label><br>
             <input type="checkbox" id="countryInUpdate" class="genre-checkbox" name="genres" value="Country">
@@ -168,7 +161,7 @@
             <input type="checkbox" id="soulInUpdate" class="genre-checkbox" name="genres" value="Soul">
             <label for="soul">Soul</label><br>
             <input type="checkbox" id="rapInUpdate" class="genre-checkbox" name="genres" value="Rap">
-            <label for="rap">Rap</label><br>
+            <label for="rap">Rap</label><br><br>
 
             <label for="labels">Labels (comma-separated):</label>
             <input type="text" id="labelsInUpdate" name="labels"><br><br>
@@ -185,7 +178,7 @@
             <input type="checkbox" id="favoriteInUpdate" class="favorite-checkbox" name="favorite" value="favorite">
             <label for="favorite">Favorite</label><br><br>
 
-            <input type="submit" value="Update Artist">
+            <input type="submit" value="Update Artist" id="updateButton">
             <input type="button" value="Cancel" id="cancelButtonInUpdate">
         </form>
     </dialog>
