@@ -1,6 +1,6 @@
 "use strict";
 
-import { cancelClickedInUpdate, createNewClicked } from "./submit.js";
+import { cancelClickedInFavorites, cancelClickedInUpdate, createNewClicked } from "./submit.js";
 
 export function showCreateForm() {
     const createForm = document.querySelector("#create-new-dialog");
@@ -17,4 +17,13 @@ export function showUpdateForm() {
     .addEventListener('click', cancelClickedInUpdate);
 
     updateForm.showModal();
+}
+
+export function ShowFavorites() {
+    document.querySelector("#cancelButtonInFavorites")
+    .addEventListener('click', cancelClickedInFavorites )
+
+    const favoriteDialog = document.querySelector("#favorites-dialog");
+
+    favoriteDialog.showModal();
 }

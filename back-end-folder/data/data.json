@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Beysdfc",
+    "name": "Beyoncé",
     "birthdate": "1981-09-04",
     "activeSince": "1997",
     "genres": [
@@ -14,11 +14,12 @@
     ],
     "website": "https://www.beyonce.com/",
     "image": "https://upload.wikimedia.org/wikipedia/lt/9/93/Beyonce_Formation.jpg",
-    "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances."
+    "shortDescription": "Beyoncé is a multi-talented artist, known for her powerful vocals and captivating performances.",
+    "favorite": false
   },
   {
     "id": 2,
-    "name": "Ed Sheeranzx",
+    "name": "Ed Sheeran",
     "birthdate": "1991-02-17",
     "activeSince": "2004",
     "genres": [
@@ -32,13 +33,14 @@
     ],
     "website": "https://www.edsheeran.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg",
-    "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs."
+    "shortDescription": "Ed Sheeran is a British singer-songwriter known for his heartfelt pop and acoustic songs.",
+    "favorite": true
   },
   {
     "id": 3,
     "name": "Ariana Grande",
     "birthdate": "1993-06-26",
-    "activeSince": 2008,
+    "activeSince": "2008",
     "genres": [
       "Pop",
       "R&B"
@@ -49,7 +51,7 @@
     "website": "https://www.arianagrande.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Ariana_Grande_Grammys_Red_Carpet_2020.png",
     "shortDescription": "Ariana Grande is an American singer with a wide vocal range and numerous chart-topping hits.",
-    "favorite": false
+    "favorite": true
   },
   {
     "id": 4,
@@ -211,23 +213,5 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/John_Legend_2019_by_Glenn_Francis.jpg/1200px-John_Legend_2019_by_Glenn_Francis.jpg",
     "shortDescription": "John Legend is an American singer known for his soulful voice and meaningful R&B songs.",
     "favorite": false
-  },
-  {
-    "name": "Pop Guy",
-    "birthdate": "2023-09-05",
-    "activeSince": 2000,
-    "genres": [
-      "Pop"
-    ],
-    "labels": [
-      "All",
-      "of",
-      "them"
-    ],
-    "website": "http://www.daniel.dk",
-    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAAAtFBMVEX///8AkP8AAAAAi/8Ajf+jz/+Tx/9IqP9rtv9xt//BwcGCuv/Ly8vh4eF4eHhxcXGOjo709PS5ubkSEhKZmZmwsLClpaXv7+8",
-    "shortDescription": "asd",
-    "favorite": false,
-    "id": 1693983879734
   }
 ]

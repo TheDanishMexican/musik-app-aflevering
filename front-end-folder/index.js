@@ -3,8 +3,8 @@
 window.addEventListener("load", start);
 
 import { cancelClicked, cancelClickedInUpdate } from "./modules/submit.js";
-import { showCreateForm } from "./modules/dialogue.js";
-import { showAllArtists } from "./modules/display.js";
+import { ShowFavorites, showCreateForm } from "./modules/dialogue.js";
+import { showAllArtists, showAllFavorites } from "./modules/display.js";
 
 const endpoint = 'http://localhost:3000'
 
@@ -13,10 +13,16 @@ export async function start() {
     const artistData = await getData();
 
     document.querySelector("#add-new button")
-    .addEventListener("click", showCreateForm)
+    .addEventListener("click", showCreateForm);
+
+    document.querySelector("#show-favorites-button")
+    .addEventListener("click", ShowFavorites);
+
+    document.querySelector("#show-favorites-button")
+    .addEventListener('click', showAllFavorites);
 
     document.querySelector("#cancelButton")
-    .addEventListener("click", cancelClicked)
+    .addEventListener("click", cancelClicked);
 
     showAllArtists(artistData);
 }

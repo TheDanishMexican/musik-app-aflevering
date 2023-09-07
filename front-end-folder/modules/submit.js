@@ -12,6 +12,10 @@ export function cancelClickedInUpdate() {
     document.querySelector("#update-dialog").close();
 }
 
+export function cancelClickedInFavorites() {
+    document.querySelector("#favorites-dialog").close();
+}
+
 export function createNewClicked(event) {
     event.preventDefault();
 
@@ -57,6 +61,9 @@ export function updateClicked(artist) {
     form.image.value = artist.image;
     form.shortDescription.value = artist.shortDescription;
 
+    const favoriteCheckbox = form.querySelector('input[name="favorite"]');
+    favoriteCheckbox.checked = artist.favorite;
+
     let genres = [];
 
     if (Array.isArray(artist.genres)) {
@@ -86,6 +93,7 @@ export function updateArtistClicked(event) {
     const website = form.website.value;
     const image = form.image.value;
     const shortDescription = form.shortDescription.value;
+    const favorite = form.querySelector('input[name="favorite"]').checked;
 
     const genres = [];
     const checkboxes = form.querySelectorAll(".genre-checkbox");
@@ -105,17 +113,9 @@ export function updateArtistClicked(event) {
         website,
         image,
         shortDescription,
-        genres
+        genres,
+        favorite
     }
     
     updateArtist(artist);
-}
-
-export async function favoriteArtists(artist) {
-const checkbox = document.querySelector('#favorite' + artist.id)
-   if(checkbox.checked) {
-        artist.favorite = true;
-   } else {
-        artist.favorite = false;
-   }
 }

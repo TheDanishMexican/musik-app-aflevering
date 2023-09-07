@@ -14,9 +14,12 @@
     </header>
 
     <div id="sort-filter-search-create-container">
+        <div id="show-favorites-button"><button>Show favorites</button></div>
+        <br>
         <div id="add-new">
             <button>Add new artist</button>
         </div>
+        <br>
         <div id="sort">
             <label for="">Sort by:</label>
             <select name="sort" id="sortSelect">
@@ -30,7 +33,6 @@
             <label for="">Filter by:</label>
             <select name="filter" id="filterSelect">
                 <option value="" selected></option>
-                <option value="Favorite">Favorite</option>
                 <option value="Pop">Pop</option>
                 <option value="Rock">Rock</option>
                 <option value="Rap">Rap</option>
@@ -179,9 +181,36 @@
             <label for="shortDescription">Short Description:</label><br>
             <textarea id="shortDescriptionInUpdate" name="shortDescription" rows="4" cols="50" ></textarea><br><br>
 
+            <input type="checkbox" id="favoriteInUpdate" class="favorite-checkbox" name="favorite" value="favorite">
+            <label for="favorite">Favorite</label><br><br>
+
             <input type="submit" value="Update Artist">
             <input type="button" value="Cancel" id="cancelButtonInUpdate">
         </form>
+    </dialog>
+
+    <dialog id="favorites-dialog">
+        <div id="artists">
+        <h2>Favorite artists</h2>
+        <input type="button" value="Cancel" id="cancelButtonInFavorites">
+        <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthdate</th>
+                        <th>Active Since</th>
+                        <th>Genres</th>
+                        <th>Labels</th>
+                        <th>Website</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="favoriteArtistTableBody">
+                </tbody>
+            </table>
+        </div>
     </dialog>
 
     <script type="module" src="index.js"></script>
