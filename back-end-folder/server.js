@@ -42,7 +42,6 @@ app.put('/artists/data/:id', async (req,res) => {
     // get ID to update and what to update with
         const artistId = Number(req.params.id);
         const updatedArtistData = req.body;  
-        console.log(updatedArtistData);
 
     // read existing data
         const data = await fs.readFile('data/data.json');

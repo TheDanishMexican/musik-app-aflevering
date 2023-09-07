@@ -112,10 +112,10 @@ export function updateArtistClicked(event) {
 }
 
 export async function favoriteArtists(artist) {
-    console.log(`${artist.name} favorite status before checkbox: ${artist.favorite}`);
-    if(artist.checkbox !== true) {
-        artist.favorite = true;
-    }
-    console.log(artist);
-    updateArtist(artist);
+const checkbox = document.querySelector('#favorite' + artist.id)
+   if(checkbox.checked){
+    artist.favorite = false;
+   } else {
+    artist.favorite = true;
+   }
 }

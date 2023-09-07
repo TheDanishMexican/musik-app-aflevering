@@ -36,7 +36,7 @@ export function showOneArtist(artist) {
       <td><button class="update-button">Update</button></td>
       <td><button class="delete-button">Delete</button></td>
       <td>            
-        <input type="checkbox" id="favorite" class="favorite-checkbox" name="favorite" value="favorite">
+        <input type="checkbox" id="favorite${artist.id}" class="favorite-checkbox" name="favorite" value="favorite">
         <label for="favorite">Favorite</label><br>
       </td>
     </tr>

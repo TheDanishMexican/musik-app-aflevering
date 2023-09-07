@@ -9,6 +9,7 @@ import { showAllArtists } from "./modules/display.js";
 const endpoint = 'http://localhost:3000'
 
 export async function start() {
+    
     const artistData = await getData();
 
     document.querySelector("#add-new button")
@@ -55,6 +56,7 @@ export async function deleteArtist(id) {
 };
 
 export async function updateArtist(artist){
+    console.log(artist);
     const idAsInteger = Number(artist.id)
     const json = JSON.stringify(artist);
 
@@ -69,6 +71,8 @@ export async function updateArtist(artist){
     //     showAllArtists(artists);
     // }
 };
+
+
 
 
 
