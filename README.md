@@ -9,7 +9,7 @@ For at kunne bruge app'en skal man også først have installeret express, node, 
 
 Serveren kan derefter startes op ved at køre npm start når man står inde i folderen 'back-end-folder' via terminalen.
 
-For at åbne app'en på nettet skal man først starte live serveren via den code editor man har åbnet koden i og herefter navigere til følgende URL http://localhost:5500/front-end-folder/index.html
+For at åbne app'en på nettet skal man først starte live serveren via den code editor man har åbnet koden i og herefter navigere til følgende URL http://localhost:5500
 
 
 
